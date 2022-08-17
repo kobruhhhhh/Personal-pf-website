@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FCE2DB;
+}
+
+nav {
+    position: relative;
+    font-family: sans-serif;
+    background: #FCE2DB;
+    display: flex;
+    margin: auto;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    cursor: pointer;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+.top {
+    background-color: #3E065F;
+    line-height: 2;
+    text-align: left;
+    color: #ECDBBA;
+    padding: 40px 0 80px 0;
+}
+
+.top h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    padding-left: 10%;
+}
+
+.top p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    padding-left: 10%;
+}
+
+.top img {
+    width: 20%;
+    float: right;
+}
+
+.profile {
+    background-color: #251D3A;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    padding-top: 3%;
+    color: #ECDBBA;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.profile p {
+    padding-top: 2%;
+    color: #B2C8DF;
+    width: 50%;
+    margin: auto auto 20px auto;
+    line-height: 2
+}
+
+hr {
+    border: dotted 6px;
+    border-bottom: none;
+    color: #9CB4CC;
+    width: 4%;
+    margin: auto;
+}
+
+.experience {
+    text-align: center;
+    background-color: #2E0249;
+    font-family: 'Comfortaa', cursive;
+    color: #ECDBBA;
+    margin-top: 10px;
+    padding-top: 2%;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    padding-bottom: 2%;
+    padding-left: 5%;
+
+}
+
+/* @media (max-width: 600px){
+.box {
+    flex-direction: column;
+}
+} */
+
+.year-company {
+    min-width: 250px;
+    padding-top: 1%;
+    color: #9D9D9D;
+    line-height: 2;
+    font-weight: 700;
+    height: 20px;
+    width: 150px;
+    font-size: 1em;
+
+}
+
+.text {
+    font-size: 1.5em;
+    text-align: left;
+    color: #85f5ff;
+    padding-left: 10%;
+    line-height: 2;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+}
+
+.text p {
+    color: #E8F6EF;
+    width: 70%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+}
+
+.skills {
+    text-align: center;
+    background-color: #2E0249;
+    font-family: 'Comfortaa', cursive;
+    color: #ECDBBA;
+    margin-top: 10px;
+    padding-top: 2%;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.progress {
+    justify-content: flex-start;
+    border-radius: 100px;
+    align-items: center;
+    position: relative;
+    left: 10%;
+    padding-top: 4%;
+    display: flex;
+    height: 40px;
+    width: 50%;
+}
+
+.progress-value {
+    animation: load 15s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.tech img {
+    padding-left: 10%;
+}
+
+.progress-value-js-php {
+    animation: load1 15s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load1 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+.progress-value-py {
+    animation: load2 15s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #fff;
+    height: 30px;
+    width: 0;
+}
+
+@keyframes load2 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.edu {
+    text-align: center;
+    background-color: #2E0249;
+    font-family: 'Comfortaa', cursive;
+    color: #ECDBBA;
+    margin-top: 10px;
+    padding-top: 2%;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.year {
+    padding-left: 2%;
+    color: #73777B;
+    line-height: 3;
+    font-weight: 700;
+    height: 20px;
+    width: 150px;
+    font-size: 1em;
+
+}
+
+.uni {
+    color: #E8F6EF;
+    width: 70%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.uni h4 {
+    color: #FAD9A1;
+}
+
+.int-lang {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    color: #ECDBBA;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.int {
+    background-color: #2E0249;
+    margin-top: 10px;
+    padding-top: 2%;
+    letter-spacing: 2px;
+}
+
+.lang {
+    background-color: #2E0249;
+    margin-top: 10px;
+    padding-top: 2%;
+    letter-spacing: 2px;
+}
+
+.icon-text {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20px 1fr;
+    padding: 2% 0 2% 5%;
+    color: #00FFAB;
+}
+
+.icon {
+    margin: auto 4%;
+    float: left;
+}
+
+.text1 {
+    float: right;
+    margin: 2% 2%;
+    width: 200px;
+}
+.container {
+    margin: 50px auto;
+    width: 50%;
+    padding-bottom: 4.4%;
+    text-align: center;
+    color: #B6FFCE;
+}
+
+.progress2 {
+    padding: 6px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progress-bar2 {
+    height: 18px;
+    border-radius: 30px;
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+}
+
+.progress-moved .progress-bar2 {
+    
+    background-color: #EF476F;
+    animation: progressAnimation 5s normal forwards;
+}
+
+@keyframes progressAnimation {
+    0% {
+        width: 0;
+        background-color: #F9BCCA;
+    }
+
+    100% {
+        width: 95%;
+        background-color: #EF476F;
+    }
+}
+.progress-moved1 .progress-bar2 {
+    
+    background-color: #EF476F;
+    animation: progressAnimation1 5s normal forwards;
+}
+
+@keyframes progressAnimation1 {
+    0% {
+        width: 0;
+        background-color: #F9BCCA;
+    }
+
+    100% {
+        width: 100%;
+        background-color: #EF476F;
+    }
+}
